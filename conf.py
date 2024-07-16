@@ -26,8 +26,11 @@ nitpicky = True
 nb_execution_mode = "off"
 
 # load extensions
-extensions = ["myst_nb",
-              "sphinx_copybutton",
+extensions = [
+    "sphinx_copybutton",
+    "sphinxext.remoteliteralinclude",
+    "pycafe_sphinx",
+    "myst_parser",
 ]
 
 html_theme = 'furo'
