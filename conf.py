@@ -29,7 +29,6 @@ nb_execution_mode = "off"
 extensions = [
     "sphinx_copybutton",
     "sphinxext.remoteliteralinclude",
-    "pycafe_sphinx",
     "myst_parser",
 ]
 
