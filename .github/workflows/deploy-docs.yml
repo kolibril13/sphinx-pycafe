@@ -1,18 +1,37 @@
-name: Deploy Sphinx documentation to Pages
+name: Deploy Docs to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main  # Adjust the branch name if necessary
 
 jobs:
-  pages:
-    runs-on: ubuntu-20.04
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    permissions:
-      pages: write
-      id-token: write
+  build:
+    runs-on: ubuntu-latest
+
     steps:
-      - id: deployment
-        uses: sphinx-notes/pages@v3
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'  
+
+    - name: Install dependencies
+      run: |
+        python -m venv .venv
+        source .venv/bin/activate
+        pip install -r requirements.txt
+        pip install sphinx
+
+    - name: Build the docs
+      run: |
+        source .venv/bin/activate
+        sphinx-build docs/source docs/build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs/build
