@@ -28,7 +28,6 @@ nb_execution_mode = "off"
 # load extensions
 extensions = ["myst_nb",
               "sphinx_copybutton",
-              "sphinxext.remoteliteralinclude"
 ]
 
 html_theme = 'furo'

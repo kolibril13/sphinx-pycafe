@@ -1,24 +1,5 @@
-# Code and image on PyCafe
+# Pycafe
 
-```{remoteliteralinclude} https://py.cafe/files/maartenbreddels/altair-car-performance-interactive/app.py
----
-language: python
-emphasize-lines: 16-22
-linenos: true
-caption: Altair Car Performance Interactive App
-name: altair-car-performance
----
-
-```
-## Code
-
-This code below is included from PyCafe directly.
-
-```python
-# The code will be included from the remote source.
-# You may want to manually include the highlighted lines if necessary.
-```
-[View the complete code here](https://py.cafe/files/maartenbreddels/altair-car-performance-interactive/app.py)
 
 ## Preview image
 
