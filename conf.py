@@ -7,30 +7,19 @@ language = 'en'
 
 # html_static_path = ['_static']
 
-project = 'Ipyreact Examples'
+project = 'PyCafe Example'
 # copyright = ''
 # author = ''
-html_title = "Ipyreact Examples"
+html_title = "PyCafe Example"
 
 # specify project details
 master_doc = "index"
-project = "MyST-NB Quickstart"
+project = "Example for Pycafe"
 
 # basic build settings
 exclude_patterns = ["_build", "README.md"]
 include_patterns = ["*.md", "*.ipynb"]
 
-
-# nb_ipywidgets_js = {
-#     "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js": {
-#         "integrity": "sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=",
-#         "crossorigin": "anonymous",
-#     },
-#     "https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@*/dist/embed-amd.js": {
-#         "data-jupyter-widgets-cdn": "https://cdn.jsdelivr.net/npm/",
-#         "crossorigin": "anonymous",
-#     },
-# }
 
 nitpicky = True
 
