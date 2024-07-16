@@ -28,7 +28,6 @@ nb_execution_mode = "off"
 # load extensions
 extensions = [
     "sphinx_copybutton",
-    "sphinxext.remoteliteralinclude",
     "myst_parser",
 ]
 
