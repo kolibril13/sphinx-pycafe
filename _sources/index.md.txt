@@ -9,9 +9,8 @@ Content:
 hi
 ```
 
-
 Repository on GitHub:  
-<https://github.com/kolibril13/ipyreact-example-gallery>
+<https://github.com/kolibril13/sphinx-pycafe-demo>
 
 
 
